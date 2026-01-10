@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>La Roche-Posay Cicaplast Baume B5 - Landing Premium</title>
+<meta name="description" content="Landing page premium para La Roche-Posay Cicaplast Baume B5. Conheça os benefícios e onde comprar com segurança.">
+<style>
+/* ===== RESET ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f2f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 50px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header img.logo {
+    max-width: 200px;
+    margin-right: 40px;
+}
+
+header img.testeira {
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #2a7ae2;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ===== FLEX CONTAINER ===== */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    flex: 1 1 48%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.card img.produto {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+}
+
+.card h2 {
+    color: #2a7ae2;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+/* ===== BOTÃO ===== */
+.botao {
+    display: inline-block;
+    background: #ff6600;
+    color: #ffffff;
+    padding: 14px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+    background: #e65c00;
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVO ===== */
+@media(max-width: 900px) {
+    .flex-container { flex-direction: column; }
+    header { flex-direction: column; align-items: center; }
+    header img.logo { margin-right: 0; margin-bottom: 20px; }
+    header img.testeira { max-width: 90%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- LOGO -->
+    <img class="logo" src="logo.png" alt="Logo">
+
+    <!-- TESTEIRA -->
+    <img class="testeira" src="testeira.png" alt="Testeira">
+</header>
+
+<main>
+    <h1>La Roche-Posay Cicaplast Baume B5</h1>
+
+    <div class="flex-container">
+        <!-- CARD 1 -->
+        <div class="card">
+            <img class="produto" src="https://m.media-amazon.com/images/I/61j7QfXcH2L._AC_SL1500_.jpg" alt="Cicaplast Baume B5">
+            <p>O La Roche-Posay Cicaplast Baume B5 é um bálsamo reparador indicado para acalmar, hidratar e auxiliar na recuperação da pele sensibilizada.</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <h2>Principais benefícios</h2>
+            <ul>
+                <li>Auxilia na recuperação da barreira da pele</li>
+                <li>Ação calmante e hidratante</li>
+                <li>Indicado para pele sensível</li>
+                <li>Uso no rosto e corpo</li>
+            </ul>
+            <h2>Como usar</h2>
+            <p>Aplique uma camada fina sobre a pele limpa uma ou duas vezes ao dia.</p>
+            <a class="botao" href="https://www.amazon.com.br/s?k=La+Roche+Posay+Cicaplast+Baume+B5&tag=meneghessofla-20" target="_blank">
+                Ver ofertas na Amazon
+            </a>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
