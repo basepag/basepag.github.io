@@ -60,11 +60,11 @@ h2 {
 <!-- ================= LOGO E TESTEIRA ================= -->
 <header style="background:#ffffff; text-align:center; padding:20px;">
     <!-- SUBSTITUA 'testeira.jpg' PELO NOME DO ARQUIVO DA SUA TESTEIRA -->
-    <img src="testeira.jpg" alt="testeita gad get copiar.png">
+    <img src="testeira.png" alt="Testeira">
 
     <div>
         <!-- SUBSTITUA 'logo.png' PELO NOME DO ARQUIVO DO SEU LOGO -->
-        <img class="logo" src="logo.png" alt="logo gad get.png">
+        <img class="logo" src="logo.png" alt="Logo">
     </div>
 </header>
 
