@@ -26,21 +26,20 @@ body {
 
 /* CONTEÚDO */
 .content {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 50px 20px;
 }
 
-/* TÍTULO PRINCIPAL */
-<h1 style="
-    font-size:56px;
-    color:#1f4fd8;
-    font-weight:900;
-    margin-bottom:30px;
-    line-height:1.1;
-">
-    CeraVe Loção Hidratante com Ácido Hialurônico
-</h1>}
+/* TÍTULO */
+h1 {
+    font-size: 52px;
+    color: #1f4fd8;
+    font-weight: 900;
+    margin-bottom: 35px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
 
 /* TEXTO */
 p {
@@ -50,40 +49,61 @@ p {
 }
 
 h2 {
-    font-size: 26px;
-    margin-top: 40px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 ul {
     font-size: 19px;
     line-height: 1.7;
     padding-left: 20px;
-    margin-bottom: 35px;
 }
 
-/* BOTÃO */
-.cta {
+/* GRID BENEFÍCIOS + CTA */
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* CTA */
+.cta-box {
     text-align: center;
-    margin: 50px 0;
+    background: #f7f8fa;
+    padding: 40px 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.cta a {
+.cta-box a {
     display: inline-block;
     background: #ff9900;
     color: #000;
-    padding: 22px 40px;
+    padding: 22px 36px;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 12px;
 }
 
-/* AVISO */
 .aviso {
     font-size: 12px;
     color: #666;
-    text-align: center;
+    margin-top: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
@@ -110,27 +130,12 @@ ul {
         ajudando a restaurar a barreira natural da pele e manter a hidratação por até 24 horas.
     </p>
 
-    <h2>Principais benefícios</h2>
+    <!-- BENEFÍCIOS + CTA -->
+    <div class="grid">
 
-    <ul>
-        <li>Hidratação intensa e prolongada</li>
-        <li>Ajuda a restaurar a barreira da pele</li>
-        <li>Textura leve, não oleosa</li>
-        <li>Sem perfume e não comedogênica</li>
-        <li>Indicada para pele seca e sensível</li>
-    </ul>
-
-    <div class="cta">
-        <a href="https://www.amazon.com.br/dp/B07RK4HST7?tag=meneghessofla-20" target="_blank">
-            Ver preço e comprar na Amazon
-        </a>
-    </div>
-
-    <div class="aviso">
-        Como Associado da Amazon, eu ganho com compras qualificadas.
-    </div>
-
-</div>
-
-</body>
-</html>
+        <!-- BENEFÍCIOS -->
+        <div>
+            <h2>Principais benefícios</h2>
+            <ul>
+                <li>Hidratação intensa e prolongada</li>
+                <li>Ajuda a restaurar a barreira da pel
